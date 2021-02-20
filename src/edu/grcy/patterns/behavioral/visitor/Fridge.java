@@ -1,15 +1,21 @@
 package edu.grcy.patterns.behavioral.visitor;
 
-public class Item2 implements ItemElement {
+public class Fridge implements Merchandise {
 
 	private int commonValue;
 	private int itemValue;
 	private String name;
 
-	public Item2(int commonValue, int itemValue, String name){
+	public Fridge(int commonValue, int itemValue, String name){
 		this.commonValue =commonValue;
 		this.itemValue=itemValue;
 		this.name = name;
+	}
+
+	@Override
+	public int accept(Calculator visitor) {
+
+		return visitor.calculate(this);
 	}
 
 	public int getCommonValue() {
@@ -24,9 +30,6 @@ public class Item2 implements ItemElement {
 		return this.name;
 	}
 
-	@Override
-	public int accept(ItemVisitor visitor) {
-		return visitor.visit(this);
-	}
+
 
 }

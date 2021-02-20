@@ -8,9 +8,13 @@ public class WalkStrategy implements TravelStrategy {
     }
 
     @Override
-    public void setTravelPlan(String from, String to) {
-        StringBuilder result = new StringBuilder("Travel by car ")
-                .append(includeTouristicPaths ? " including touristic paths" : "");
-        System.out.println(result);
+    public String setTravelPlan(String from, String to) {
+        return new StringBuilder("Travel by foot from ")
+                .append(from)
+                .append(" to ")
+                .append(to)
+                .append(includeTouristicPaths ? " including touristic paths" : "")
+                .toString();
+
     }
 }

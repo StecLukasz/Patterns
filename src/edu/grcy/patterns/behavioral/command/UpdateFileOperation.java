@@ -9,6 +9,7 @@ public class UpdateFileOperation implements FileOperation {
 
     @Override
     public String performOperation(String content) {
+        System.out.println(getClass().getSimpleName()+ "called for" + myFile.getFileName());
         return myFile.updateFile(content);
     }
 }

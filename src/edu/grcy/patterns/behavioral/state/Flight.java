@@ -19,4 +19,8 @@ public class Flight {
         }
         state.updateState(this);
     }
+
+    public void performAction(){
+        state.performAction(this);
+    }
 }

@@ -11,4 +11,8 @@ public class FileOperationPerformer {
         fileOperationsHistory.add(fileOperation);
         return fileOperation.performOperation(content);
     }
+
+    public List<FileOperation> getFileOperationsHistory() {
+        return fileOperationsHistory;
+    }
 }

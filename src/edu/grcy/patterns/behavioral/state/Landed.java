@@ -14,4 +14,9 @@ public class Landed implements FlightState {
     public void updateState(Flight flight) {
         System.out.println("Landed. Enjoy your stay!");
     }
+
+    @Override
+    public void performAction(Flight flight) {
+        System.out.println("Cabin crew wishes all the best!! Remeber to take your baggage.");
+    }
 }

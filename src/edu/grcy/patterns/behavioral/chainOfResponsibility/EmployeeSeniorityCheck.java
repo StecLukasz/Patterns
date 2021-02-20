@@ -5,7 +5,7 @@ public class EmployeeSeniorityCheck extends AccessCheck {
     public boolean doCheck(String username) {
         System.out.println("EmployeeSeniorityCheck start for " + username);
         if(Employees.checkEmployeeLevel(username) < 10) {
-            System.out.println(getClass().getCanonicalName() + " do_Check");
+            System.out.println(getClass().getCanonicalName() + " do_Check FAILED");
             return false;
         }
         System.out.println(getClass().getCanonicalName() + " do_Check PASSED");

@@ -1,6 +1,7 @@
 package edu.grcy.patterns.behavioral.chainOfResponsibility;
 
 public abstract class AccessCheck {
+
     private AccessCheck nextCheck;
 
     public AccessCheck addChainElement(AccessCheck nextCheck) {

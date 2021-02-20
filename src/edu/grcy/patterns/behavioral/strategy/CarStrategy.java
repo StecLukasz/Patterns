@@ -10,10 +10,14 @@ public class CarStrategy implements TravelStrategy{
     }
 
     @Override
-    public void setTravelPlan(String from, String to) {
-        StringBuilder result = new StringBuilder("Travel by car ")
+    public String setTravelPlan(String from, String to) {
+        String result = new StringBuilder("Travel by car from " )
+                .append(from)
+                .append(" to ")
+                .append(to)
                 .append(includePaidMotorways ? "including paid motorways"  : "")
-                .append(includeFieldRoads ? " including field roads" : "");
-        System.out.println(result);
+                .append(includeFieldRoads ? " including field roads" : "")
+                .toString();
+        return result;
     }
 }
