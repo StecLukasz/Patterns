@@ -22,11 +22,5 @@ public class VisitorDemo {
         System.out.println("==========================");
 
 
-//        priceCalc.calculate((Butter) butter);
-//        priceCalc.calculate((Fridge) bosch);
-//        priceCalc.calculate((Fridge) electrolux);
-
-
-
     }
 }
